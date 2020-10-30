@@ -41,11 +41,15 @@
 
             $v = $this->y() / $this->modulo();
 
+            return $v;
+
         }
 
         public function versor_Z() {
 
             $v = $this->z() / $this->modulo();
+
+            return $v;
 
         }
 
@@ -81,7 +85,7 @@
             return $angle;
 
         }
-        
+
     }
 
 
