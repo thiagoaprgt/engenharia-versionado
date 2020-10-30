@@ -1,0 +1,24 @@
+Classes vetores que serão criadas:
+
+
+Classe a ser criada             ;           variáveis informadas no problema        ;       feita       ;       testada
+
+Vetor_xyz                       ;           x, y, z                                 ;       s           ;       n
+
+
+
+
+
+Vetor_xyr                       ;           x, y, r                                 ;       s           ;       n
+
+Vetor_xzr                       ;           x, z, r                                 ;       s           ;       n
+
+Vetor_yzr                       ;           y, z, r                                 ;       s           ;       n
+
+
+
+
+
+
+
+
