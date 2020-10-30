@@ -1,6 +1,6 @@
 <?php
 
-
+    namespace model\Vetores\Vetor_strategy_pattern;
 
     interface Vetor_interface {
 

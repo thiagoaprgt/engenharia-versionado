@@ -2,6 +2,8 @@
 
     namespace model\Vetores\Vetor_strategy_pattern;
 
+    use model\Vetores\Vetor_strategy_pattern\Vetor_interface;
+
     class Vetor_xyr implements Vetor_interface {
 
         protected $x, $y, $r;
