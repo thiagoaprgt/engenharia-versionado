@@ -33,20 +33,20 @@
         
         public function versor_X() {
 
-            $v = $this->x / $this->r;
+            $v = $this->x() / $this-modulo();
 
             return $v;
         }
 
         public function versor_Y() {
 
-            $v = $this->y / $this->r;
+            $v = $this->y() / $this->modulo();
 
         }
 
         public function versor_Z() {
 
-            $v = $this->z() / $this->r;
+            $v = $this->z() / $this->modulo();
 
         }
 
