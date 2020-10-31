@@ -31,7 +31,7 @@
 
                 }
 
-                $content .= "<input type=\"hidden\" name=\"namespace\" value=\"Controller\Vetores\" >";
+                $content .= "<input type=\"hidden\" name=\"namespace\" value=\"Controller\Vetor_intensidade\" >";
 
                 $content .= "<input type=\"submit\" value=\"enviar\" >";
 

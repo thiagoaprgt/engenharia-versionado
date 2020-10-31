@@ -2,8 +2,8 @@
 
     namespace model\Vetores\Vetor_strategy_pattern;
 
-    interface Vetor_interface {
-
+    interface Vetor_interface {    
+        
         public function x();
 
         public function y();

@@ -9,8 +9,7 @@
         protected $x, $z, $r;
 
         public function __construct($x, $z, $r) {}
-
-        
+                
         public function x() {
             return $this->x;
         }
