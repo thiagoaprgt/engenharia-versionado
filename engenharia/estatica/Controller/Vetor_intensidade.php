@@ -50,7 +50,7 @@
 
                     $content .= "<div>";
 
-                    $content .= "<label>vetor_$i</label>". ":\t\t\t\t\t\t\t\t";
+                    $content .= "<label>vetor_$i". ":\t\t\t\t\t\t\t\t" . "</label>";
 
                     // instanciar a classe das intensidades do vetores (criar os objetos)
 
