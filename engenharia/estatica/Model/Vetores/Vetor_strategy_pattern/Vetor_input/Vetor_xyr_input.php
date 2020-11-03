@@ -27,6 +27,7 @@
 
             $input = "<input type=\"number\" name=\"vetor_" . $variavel . "_{\$i}" . "\" >";
 
+
             $show = $label . $input;
 
             return $show;

@@ -9,13 +9,23 @@
 
         protected $x, $y, $z;
 
-        public function __construct($x, $y, $z) {}
+        public function __construct() {}
+
+        public function variavel($x, $y, $z) {
+
+            $this->x = $x;
+            $this->y = $y;
+            $this->z = $z;
+            
+        }
         
         public function x() {
 
             return $this->x;
 
         }
+
+        
 
         public function y() {
 
@@ -42,7 +52,7 @@
 
         public function versor_X() {
 
-            $v = $this->x() / $this-modulo();
+            $v = $this->x() / $this->modulo();
 
             return $v;
         }
@@ -68,7 +78,7 @@
             // a função pi() retorna o valor 3,14...
             // a função acos() retorna o valor em radianos
 
-            $angle = ( 180 / pi() ) * acos( versor_X() );
+            $angle = ( 180 / pi() ) * acos( $this->versor_X() );
 
             return $angle;
 
@@ -79,7 +89,7 @@
             // a função pi() retorna o valor 3,14...
             // a função acos() retorna o valor em radianos
 
-            $angle = ( 180 / pi() ) * acos( versor_Y() );
+            $angle = ( 180 / pi() ) * acos( $this->versor_Y() );
 
             return $angle;
 
@@ -90,7 +100,7 @@
             // a função pi() retorna o valor 3,14...
             // a função acos() retorna o valor em radianos
 
-            $angle = ( 180 / pi() ) * acos( versor_Z() );
+            $angle = ( 180 / pi() ) * acos( $this->versor_Z() );
 
             return $angle;
 

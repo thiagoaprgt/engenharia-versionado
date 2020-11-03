@@ -16,10 +16,9 @@
 
             //$content = "Em desenvolvimento ...";
 
-            $action = '';
-            $method = 'get';
+            $action = 'index.php';            
 
-            $content = "<form action=\"$action \" method=\"$method\">";
+            $content = "<form action=\"$action \" method=\"get\">";
 
             $i = 0;
 
@@ -28,6 +27,8 @@
             // tem que fazer o require da interface antes das classes que a implementam 
 
             require_once 'Model/Vetores/Vetor_strategy_pattern/Vetor_input/Vetor_input_interface.php';
+
+                       
 
             foreach ($_GET as $k => $v) {
 
@@ -68,7 +69,13 @@
 
                     ob_end_clean(); 
 
-                    $content .= $vetor[$i];   
+                    $content .= $vetor[$i];
+
+                    $class = str_replace('Vetor_input\Vetor_input', 'Vetor', $v);
+
+                    // este input será usado para enviar o namespace da classe de cada objeto criado
+                    
+                    $content .= "<input type=\"hidden\" name=\"vetor_$i\" value=\"$class\" >";
                     
                     $content .= "</div>";
 
@@ -81,15 +88,15 @@
                 
             }
 
-            $namespace = '';
+            $namespace = 'Controller\Calcula_componente';
 
             $content .= "<input type=\"hidden\" name=\"namespace\" value=\"$namespace\" >";
 
             $content .= "<input type=\"submit\" value=\"enviar\" >";
 
 
-            $content .= "</form>";
-
+            $content .= "</form>"; 
+            
 
             $content = str_replace('{content}', $content, $template);
 
